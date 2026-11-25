@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "EB Garamond";
+    src: url("fonts/EBGaramond-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "EB Garamond";
+    src: url("fonts/EBGaramond-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "EB Garamond";
+    src: url("fonts/EBGaramond-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 2rem;
+    max-width: 70%;
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    background: white;
+}
+
+a {
+    color: black;
+}
+
+code,
+pre {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8em;
+}
+pre code {
+    font-size: 1em;
+}
+
+pre {
+    margin-left: 2ch;
+    overflow-x: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+.date {
+    font-variant-numeric: tabular-nums;
+}
+.list .date {
+    margin-right: 1.5ch;
+}
