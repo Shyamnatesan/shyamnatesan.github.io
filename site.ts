@@ -65,7 +65,6 @@ function build() {
   mkdirSync("dist");
   cpSync("style.css", "dist/style.css");
   cpSync("fonts", "dist/fonts", { recursive: true });
-  cpSync("images", "dist/images", { recursive: true });
 
   for (const note of notes) {
     const body = `<p><a href="index.html">&larr; home</a></p>
@@ -108,7 +107,7 @@ function tryBuild() {
 if (process.argv[2] === "serve") {
   tryBuild();
 
-  for (const path of ["notes", "fonts", "images", "style.css"])
+  for (const path of ["notes", "fonts", "style.css"])
     watch(path, { recursive: true }, tryBuild);
 
   Bun.serve({
